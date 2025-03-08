@@ -1239,7 +1239,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "plinth-hello-world"
+name = "plinth-hello-worlds"
 version = "0.1.0"
 dependencies = [
  "console_error_panic_hook",

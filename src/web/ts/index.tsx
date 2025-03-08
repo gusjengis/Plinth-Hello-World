@@ -1,5 +1,5 @@
 import { render } from "solid-js/web";
-import "../../plinth/plinth_web/plinth.tsx";
+import { PlinthStyles } from "plinth-web";
 import "../css/hello_world.css";
 
 console.log("Hello World!")
