@@ -3,9 +3,8 @@
 /jsdist
 /node_modules
 /.helix
-index.html
-package-log.json
-flake.lock
-Cargo.lock
-.DS_Store
-vite.config.js
+./package-lock.json
+./flake.lock
+./Cargo.lock
+./.DS_Store
+./vite.config.js
