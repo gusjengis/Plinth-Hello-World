@@ -1221,6 +1221,41 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "953ec861398dccce10c670dfeaf3ec4911ca479e9c02154b3a215178c5f566f2"
 
 [[package]]
+name = "plinth-core"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "620916ef2e07f1e184cc5e5ed261f831aa123cb9a50ac0862801a1447d136da9"
+dependencies = [
+ "console_error_panic_hook",
+ "console_log",
+ "env_logger",
+ "log",
+ "pollster",
+ "wasm-bindgen",
+ "wasm-bindgen-futures",
+ "wasm-logger",
+ "wgpu",
+ "winit",
+]
+
+[[package]]
+name = "plinth-hello-world"
+version = "0.1.0"
+dependencies = [
+ "console_error_panic_hook",
+ "console_log",
+ "env_logger",
+ "log",
+ "plinth-core",
+ "pollster",
+ "wasm-bindgen",
+ "wasm-bindgen-futures",
+ "wasm-logger",
+ "wgpu",
+ "winit",
+]
+
+[[package]]
 name = "polling"
 version = "3.7.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2022,22 +2057,6 @@ dependencies = [
  "wgpu-types",
  "windows",
  "windows-core",
-]
-
-[[package]]
-name = "wgpu-template"
-version = "0.1.0"
-dependencies = [
- "console_error_panic_hook",
- "console_log",
- "env_logger",
- "log",
- "pollster",
- "wasm-bindgen",
- "wasm-bindgen-futures",
- "wasm-logger",
- "wgpu",
- "winit",
 ]
 
 [[package]]

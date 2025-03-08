@@ -4,7 +4,9 @@ use wgpu::{
     ShaderSource, StoreOp, TextureViewDescriptor, VertexState,
 };
 
-use crate::{my_app::MyApp, plinth::graphics::Graphics, plinth::plinth_app::PlinthRenderer};
+use crate::my_app::MyApp;
+use plinth_core::graphics::Graphics;
+use plinth_core::plinth_app::PlinthRenderer;
 use std::borrow::Cow;
 
 impl PlinthRenderer for MyApp {

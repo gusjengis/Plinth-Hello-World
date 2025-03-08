@@ -1,4 +1,4 @@
-use crate::plinth::plinth_app::PlinthApp;
+use plinth_core::plinth_app::PlinthApp;
 use wasm_bindgen::prelude::*;
 
 #[wasm_bindgen]
