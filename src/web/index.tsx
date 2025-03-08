@@ -1,8 +1,9 @@
 import { render } from "solid-js/web";
-import { PlinthStyles } from "plinth-web";
-import "../css/hello_world.css";
+import "./hello_world.css";
+import * as Plinth from "plinth-web";
+Plinth.ApplyStyling();
 
-console.log("Hello World!")
+console.log("Hello World!");
 
 function App() {
 	return (
