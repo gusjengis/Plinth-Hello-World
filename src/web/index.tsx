@@ -1,7 +1,8 @@
+import * as Plinth from "plinth-web";
+Plinth.ApplyStyling(); // just to get tree shaking off my back. https://en.wikipedia.org/wiki/Tree_shaking
+
 import { render } from "solid-js/web";
 import "./hello_world.css";
-import * as Plinth from "plinth-web";
-Plinth.ApplyStyling();
 
 console.log("Hello World!");
 
