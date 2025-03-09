@@ -16,6 +16,7 @@
           nativeBuildInputs = with pkgs; [
             nodejs_23
             rustup
+            python3
             cargo
             trunk
             watchexec
