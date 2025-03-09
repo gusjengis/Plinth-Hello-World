@@ -1,69 +1,16 @@
-# WGPU (24.0.1) + Winit (0.30.8) Template
+# Plinth Hello World!
+This repo is an example of my Plinth stack. I plan to use this as base for other projects of mine, trying to avoid repeating the same setup code.
 
-This is a template repository to get started with **[WGPU](https://wgpu.rs/)
-(24.0.1)** + **[Winit](https://github.com/rust-windowing/winit) (0.30.8)**.
+The idea is that I have a GPU rendered layer in the background with easy web tech UI floating on top of it. So that I can render massive amounts of data or complex 2D/3D renders without lag and still have the convenience of normal UI when I need it.
 
-The template supports **cross-platform** compilation for **Windows**, **Linux**,
-**MacOS** and **WebAssembly**, utilizing **WebGPU/WebGL** with
-[trunk](https://trunkrs.dev/).
+This is built on 3 other repos.
+[Plinth-Web-Build](https://github.com/gusjengis/Plinth-Web-Build): Pretty nice build and dev server commmands.
+[Plinth-Web](https://github.com/gusjengis/Plinth-Web): TSX and CSS that I want to be common between projects.
+[Plinth-Core](https://github.com/gusjengis/Plinth-Core): Nice interface that allows me to use winit and wgpu without having to look at the setup code.
 
-## Quickstart
+### The Stack
+Solid.js(TSX)
+wgpu(WASM/Rust)
+winit(WASM/Rust)
 
-```sh
-# Clone the repository and open it
-git clone https://github.com/Foxicution/wgpu-template
-cd wgpu-template
-
-# To run natively (Windows/MacOS/Linux)
-cargo run
-
-# To run on the web with WebAssembly (WASM)
-# Add target wasm32-unknown-unknown for WASM builds
-rustup target add wasm32-unknown-unknown
-
-# Install Typescript
-npm install --global typescript
-
-## Dev Build & Server Dependencies
-
-# Install trunk for WASM builds
-cargo install trunk
-
-# Install concurrently to run multiple commands simultaneously
-npm install --global concurrently
-
-# Install watchexec to execute commands when files update
-cargo install watchexec-cli
-
-# Install live server for hot-reloading dev server
-npm install --global live-server
-
-# Install rimraf for cross-platform folder clearing
-npm install --global rimraf
-
-# Install npm-run-all for execution independent of shell/OS
-npm install --global npm-run-all
-```
-
-For web builds, the app will be running on http://localhost:8080.
-
-To check if your browser supports WebGPU go [here](https://webgpureport.org/).
-
-# Contributing
-
-If you run into any issues while using the template, feel free to submit a
-[Github issue](https://github.com/Foxicution/wgpu-template/issues) or a
-[Pull Request](https://github.com/Foxicution/wgpu-template).
-
-# Resources
-
-References and projects that helped create this template:
-
-- [learn-wgpu](https://sotrh.github.io/learn-wgpu/)
-- [wgpu_winit_example](https://github.com/w4ngzhen/wgpu_winit_example)
-- [wgpu-0.20-winit-0.30-web-example](https://github.com/erer1243/wgpu-0.20-winit-0.30-web-example)
-- [winit issue#3626](https://github.com/rust-windowing/winit/issues/3626)
-- [shura](https://github.com/AndriBaal/shura)
-- [wgpu-example](https://github.com/matthewjberger/wgpu-example)
-- [wgpu_starter](https://github.com/N3xus8/wgpu_starter)
-- [winit discussion#3667](https://github.com/rust-windowing/winit/discussions/3667)
+Solid.js is only included in this repo, and could be easily swapped for any other UI framework. I just happen to want to try it.
