@@ -1,5 +1,6 @@
 use plinth_core::graphics::Rc;
 use std::cell::RefCell;
+mod bindgen_example;
 mod my_app;
 mod my_rendering;
 
