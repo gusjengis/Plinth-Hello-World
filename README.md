@@ -1,7 +1,7 @@
 # Plinth Hello World!
 This repo is an example of my Plinth stack. I plan to use this as base for other projects of mine, trying to avoid repeating the same setup code.
 
-The idea is that I have a GPU rendered layer in the background with easy web tech UI floating on top of it. So that I can render massive amounts of data or complex 2D/3D renders without lag and still have the convenience of normal UI when I need it.
+The idea is that I have a GPU rendered layer in the background with easy web tech UI floating on top of it. So that I can render massive amounts of data or complex 2D/3D graphics without lag and still have the convenience of normal UI when I need it.
 
 This is built on 4 other repos.
 
