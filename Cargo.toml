@@ -1,23 +1,18 @@
 [package]
 name = "plinth-hello-world"
-version = "0.1.0"
-edition = "2021"
+version = "0.1.1"
+edition = "2024"
 
 [features]
 default = []
-# turn on when compiling for browsers while waiting for webgpu
-# to get proper support
-webgl = ["wgpu/webgl"]
 
 [dependencies]
-winit = { version = "0.30.8" }
 env_logger = {version = "0.11.5"}
 log = { version = "0.4.22"}
-wgpu = { version = "24.0.1"}
 pollster = {version ="0.4.0"}
 wasm-logger = "0.2.0"
 wasm-bindgen = "0.2.100"
-plinth-core = "0.1.0"
+plinth-core = "0.1.2"
 plinth-util-temp = "0.1.0"
 
 [target.'cfg(target_arch = "wasm32")'.dependencies]

@@ -1,4 +1,4 @@
-use wgpu::{
+use plinth_core::wgpu::{
     Color, CommandEncoderDescriptor, FragmentState, LoadOp, Operations, RenderPassColorAttachment,
     RenderPassDescriptor, RenderPipeline, RenderPipelineDescriptor, ShaderModuleDescriptor,
     ShaderSource, StoreOp, TextureViewDescriptor, VertexState,
@@ -63,6 +63,7 @@ impl PlinthRenderer for MyApp {
                         load: LoadOp::Clear(Color::BLACK),
                         store: StoreOp::Store,
                     },
+                    depth_slice: None,
                 })],
                 depth_stencil_attachment: None,
                 timestamp_writes: None,
